@@ -681,6 +681,27 @@
 
   .footer-copy { font-size: 11px; color: rgba(168,191,171,0.5); text-align: right; }
 
+  /* ===== LINK STYLES ===== */
+  a { transition: color 0.2s ease; }
+  .contact-item a:hover { color: var(--white) !important; }
+
+  .banner-section {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+    border: 1px solid rgba(61,175,86,0.1);
+    border-radius: 12px;
+  }
+  .banner-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
   /* ===== ANIMATIONS ===== */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
@@ -722,9 +743,9 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <div class="nav-logo-mark">AN</div>
+    <div class="nav-logo-mark">FF</div>
     <div class="nav-brand">
-      <strong>ADVENT NURUTECH</strong>
+      <strong>FUNDIFLOW</strong>
       <span>Smart Systems. Tailored for Success.</span>
     </div>
   </div>
@@ -734,7 +755,7 @@
     <li><a href="#reports">Reports</a></li>
     <li><a href="#pricing">Pricing</a></li>
   </ul>
-  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+  <button class="nav-cta" onclick="window.open('https://wa.me/254142225233?text=Hi%20Fundiflow%2C%20I%20want%20to%20get%20started%20with%20your%20platform', '_blank')">Get Started</button>
 </nav>
 
 <!-- HERO -->
@@ -743,11 +764,11 @@
   <div class="hero-left">
     <div class="hero-badge">⭐ Built for Tailors. Designed for Growth.</div>
     <div class="hero-eyebrow">The Complete System</div>
-    <h1 class="hero-title">TAILOR<span>OPERATING</span>SYSTEM</h1>
+    <h1 class="hero-title">FUNDI<span>FLOW</span></h1>
     <p class="hero-subtitle-large">Run your business smarter.</p>
-    <p class="hero-desc">Advent Nurutech gives tailors and fashion shops a powerful all-in-one platform to manage customers, materials, orders, staff, reports and more — all from one smart system.</p>
+    <p class="hero-desc">Fundiflow gives tailors and fashion shops a powerful all-in-one platform to manage customers, materials, orders, staff, reports and more — all from one smart system.</p>
     <div class="hero-actions">
-      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">🚀 Get Started Today</button>
+      <button class="btn-primary" onclick="window.open('https://wa.me/254142225233?text=Hi%20Fundiflow%2C%20I%20want%20to%20get%20started%20with%20your%20platform', '_blank')">🚀 Get Started Today</button>
       <button class="btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">See Features →</button>
     </div>
     <div class="hero-stats">
@@ -772,7 +793,7 @@
         <div class="dot dot-r"></div>
         <div class="dot dot-y"></div>
         <div class="dot dot-g"></div>
-        <span class="mockup-title">TAILOR OS — Dashboard</span>
+        <span class="mockup-title">FUNDIFLOW — Dashboard</span>
       </div>
       <div class="mockup-body">
         <div class="mockup-header">Dashboard Overview</div>
@@ -824,6 +845,9 @@
   <div class="section-label reveal">Core Modules</div>
   <h2 class="section-title reveal">EVERYTHING A TAILOR NEEDS</h2>
   <p class="section-desc reveal">One system that replaces notebooks, spreadsheets, and confusion — built specifically for tailoring businesses across Africa.</p>
+  <div class="banner-section reveal" style="margin-bottom: 64px;">
+    <img src="assets/advertisement banner.jpeg" alt="Fundiflow Professional Tailoring Solution" style="max-height: 300px; object-fit: contain;">
+  </div>
   <div class="features-grid reveal">
     <div class="feature-card">
       <div class="feature-icon">👤</div>
@@ -1052,7 +1076,7 @@
         <li>WhatsApp alerts</li>
         <li>Offline support</li>
       </ul>
-      <button class="btn-secondary" style="width:100%; text-align:center; font-size:14px; padding:12px">Get Started</button>
+      <button class="btn-secondary" style="width:100%; text-align:center; font-size:14px; padding:12px" onclick="window.open('https://wa.me/254142225233?text=Hi%20Fundiflow%2C%20I%27m%20interested%20in%20the%20Starter%20plan%20at%20KSh%201%2C500%2Fmonth', '_blank')">Get Started</button>
     </div>
     <div class="price-card featured">
       <div class="featured-badge">MOST POPULAR</div>
@@ -1067,7 +1091,7 @@
         <li>PDF receipts & invoices</li>
         <li>M-Pesa integration</li>
       </ul>
-      <button class="btn-primary" style="width:100%; text-align:center; font-size:14px; padding:12px">Get Started</button>
+      <button class="btn-primary" style="width:100%; text-align:center; font-size:14px; padding:12px" onclick="window.open('https://wa.me/254142225233?text=Hi%20Fundiflow%2C%20I%27m%20interested%20in%20the%20Professional%20plan%20at%20KSh%203%2C500%2Fmonth', '_blank')">Get Started</button>
     </div>
     <div class="price-card">
       <div class="plan-name">Enterprise</div>
@@ -1080,7 +1104,7 @@
         <li>Priority support</li>
         <li>Custom integrations</li>
       </ul>
-      <button class="btn-secondary" style="width:100%; text-align:center; font-size:14px; padding:12px">Contact Sales</button>
+      <button class="btn-secondary" style="width:100%; text-align:center; font-size:14px; padding:12px" onclick="window.open('https://wa.me/254142225233?text=Hi%20Fundiflow%2C%20I%27m%20interested%20in%20the%20Enterprise%20plan%20and%20would%20like%20to%20know%20more%20about%20custom%20pricing.', '_blank')">Contact Sales</button>
     </div>
   </div>
 </section>
@@ -1090,25 +1114,25 @@
   <h2 class="section-title reveal" style="color:#fff; margin-bottom:16px">WORK SMART.<br>DELIVER PERFECT.<br>GROW FASTER.</h2>
   <p class="section-desc reveal">Your business deserves a system that works as hard as you do.</p>
   <div class="cta-actions reveal">
-    <button class="btn-white">🚀 Get Started Today</button>
-    <button class="btn-outline-white">📞 Call / WhatsApp</button>
+    <button class="btn-white" onclick="window.open('https://wa.me/254142225233?text=Hi%20Fundiflow%2C%20I%20want%20to%20get%20started%20with%20your%20platform', '_blank')">🚀 Get Started Today</button>
+    <button class="btn-outline-white" onclick="window.open('https://wa.me/254142225233?text=Hi%20Fundiflow%2C%20I%20want%20to%20learn%20more%20about%20your%20services', '_blank')">📞 Call / WhatsApp</button>
   </div>
   <p style="margin-top:32px; font-size:13px; color:rgba(255,255,255,0.7)">
-    📞 +254 142 225 233 &nbsp;&nbsp;|&nbsp;&nbsp; ✉️ adventnurutech@gmail.com
+    📞 <a href="tel:+254142225233" style="color:rgba(255,255,255,0.9); text-decoration:none">+254 142 225 233</a> &nbsp;&nbsp;|&nbsp;&nbsp; ✉️ <a href="mailto:adventnurutech@gmail.com" style="color:rgba(255,255,255,0.9); text-decoration:none">adventnurutech@gmail.com</a>
   </p>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">
-    <strong>ADVENT NURUTECH</strong>
-    <span>Servant of God and Friend to Man</span>
+    <strong>FUNDIFLOW</strong>
+    <span>Smart Tailoring Solutions</span>
   </div>
   <div class="footer-contact">
-    <div class="contact-item">📞 <div><strong>+254 142 225 233</strong><br>Call / WhatsApp</div></div>
-    <div class="contact-item">✉️ <div><strong>adventnurutech@gmail.com</strong><br>Email</div></div>
+    <div class="contact-item">📞 <div><strong><a href="tel:+254142225233" style="color: var(--green-light); text-decoration:none">+254 142 225 233</a></strong><br>Call / WhatsApp</div></div>
+    <div class="contact-item">✉️ <div><strong><a href="mailto:adventnurutech@gmail.com" style="color: var(--green-light); text-decoration:none">adventnurutech@gmail.com</a></strong><br>Email</div></div>
   </div>
-  <div class="footer-copy">© 2025 Advent Nurutech<br>All rights reserved</div>
+  <div class="footer-copy">© 2025 Fundiflow • Powered by <a href="https://adventnurutech.xyz" style="color:rgba(168,191,171,0.8); text-decoration:none">adventnurutech.xyz</a><br>All rights reserved</div>
 </footer>
 
 <script>
